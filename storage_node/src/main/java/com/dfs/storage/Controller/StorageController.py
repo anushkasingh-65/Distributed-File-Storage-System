@@ -13,5 +13,7 @@ public class StorageController {
   public StorageController(NioStorageService storageService) {
     this.storageService = storageService;
    }
+
   @PostMapping("/chunks/{chunkName}")
+  public ResponseEntity<String> uploadChunk(@PathVariable String chunkName, @RequestBody byte[] data) {
 
