@@ -28,3 +28,4 @@ public class StorageController {
   public ResponseEntity<byte[]> getChunk(@PathVariable String chunkName) {
       try {
           byte[] data = storageService.readChunk(chunkName);
+          return ResponseEntity.ok(data);
