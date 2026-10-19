@@ -23,3 +23,5 @@ public class StorageController {
         return ResponseEntity.internalServerError().body("Failed to save chunk: " + e.getMessage());
     }
   }
+
+  @GetMapping("/chunks/{chunkName}")
