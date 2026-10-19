@@ -25,3 +25,4 @@ public class StorageController {
   }
 
   @GetMapping("/chunks/{chunkName}")
+  public ResponseEntity<byte[]>
